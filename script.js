@@ -1,7 +1,6 @@
 let bookmarkCount = document.getElementById('bookmark-count');
 let count = 0;
 
-
 let bookmarkBtns = document.querySelectorAll('.bookmark-btn');
 for (let btn of bookmarkBtns) {
     btn.addEventListener('click', function () {
@@ -14,13 +13,9 @@ for (let btn of bookmarkBtns) {
 }
 
 let hotlineNumbers = document.querySelectorAll('.hotline-number');
-
 let titles = document.querySelectorAll('.emergency-title');
-
 let copyBtn = document.querySelectorAll('.copy-btn');
-
 let callBtns = document.querySelectorAll('.call-btn');
-
 let coin = parseInt(document.getElementById('coin').innerText);
 
 for (let btn of callBtns ) {
@@ -39,10 +34,6 @@ for (let btn of callBtns ) {
         let now = new Date();
         let localTime = now.toLocaleTimeString("en-US", { timeZone: "Asia/Dhaka", hour12: true });
 
-        // let historyTitle = document.getElementById('history-title')
-        // let historyNumber = document.getElementById('history-number')
-        // historyTitle.innerText = title;
-        // historyNumber.innerText = number;
         let historySection = document.getElementById('history-section');
 
         let div = document.createElement('div');
