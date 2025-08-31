@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header nav{
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.nav-bookmark button {
+    padding: 20px 20px;
+    font-size: 25px;
+    border-radius: 30px;
+}
+.hero-section{
+  background: linear-gradient(
+  to right, 
+  #013223 0%, 
+  #006747 50%, 
+  #013223 100% );
+  padding: 20px 0px;
+}
+.hero-section h1{
+    padding:10px 0px;
+}
+.bookmark-btn{
+    cursor: pointer;
+}
+@media (max-width:580px) {
+    header nav{
+        margin: 5px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    header nav div {
+        margin-bottom: 5px;
+    }
+    .hero-section h1{
+        font-size: 30px;
+        text-align: center;
+        width: 90%;
+        margin: -10 auto;
+    }
+    .hero-section p{
+        width: 90%;
+        text-align: center;
+    }
+    .menu-icon{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
+@media (max-width:650px) {
+    .menu-icon{
+        width: 100%;
+        justify-content: space-between;
+    }
+    header nav{
+        margin: 5px auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
