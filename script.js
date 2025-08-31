@@ -66,11 +66,6 @@ for (let btn of callBtns ) {
 let copyCount = 0;
 for ( let copy of copyBtn) {
     copy.addEventListener('click', function () {
-        let index = Array.from(copyBtn).indexOf(copy);
-        let number = hotlineNumbers[index].innerText;
-        navigator.clipboard.writeText(number);
-        copyCount++;
-        alert(number + ' has been copied to clipboard')
-        document.getElementById('copy-display').innerText = copyCount;
+
     })
 }
